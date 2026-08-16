@@ -22,7 +22,7 @@ Rekayasa AI mengubah pengembangan produk dengan mengotomatisasi tugas, meningkat
 
 Seorang Insinyur AI menggunakan model yang telah dilatih sebelumnya dan perangkat AI yang sudah ada untuk meningkatkan pengalaman pengguna. Mereka berfokus pada penerapan AI secara praktis tanpa harus membangun model dari nol. Hal ini berbeda dengan Peneliti AI dan Insinyur ML, yang lebih berfokus pada pembuatan model baru atau pengembangan teori AI.
 
-## ll. Cara Kerja LLM
+## ll. Cara Kerja LLM (Working with LLM)
 
 Large Language Models (LLM) adalah sistem AI canggih yang dilatih menggunakan data teks dalam jumlah sangat besar untuk memahami, menghasilkan, dan memanipulasi bahasa manusia. Sistem ini bekerja dengan mempelajari hubungan statistik antar-kata dan frasa, yang memungkinkannya memprediksi kata berikutnya dalam suatu urutan atau menghasilkan teks yang koheren berdasarkan instruksi (prompt) yang diberikan. Kemampuan ini dicapai melalui jaringan saraf dalam (deep neural networks)—terutama dengan menggunakan arsitektur transformer—yang memungkinkan sistem menangkap ketergantungan jarak jauh dalam teks dan menghasilkan keluaran yang relevan secara kontekstual.
 
@@ -87,7 +87,7 @@ Rekayasa prompt adalah seni dan ilmu dalam menyusun prompt yang efektif, yaitu i
 - **Context Engineering**.
 Rekayasa konteks adalah praktik merancang dan menyusun informasi yang Anda berikan kepada model AI secara cermat agar model tersebut dapat menjalankan tugasnya dengan lebih baik. Bayangkan hal ini seperti menyiapkan segala sesuatu yang dibutuhkan AI sebelum mulai bekerja—termasuk memberikan instruksi yang tepat, contoh, pengetahuan latar belakang, dan riwayat percakapan—yang semuanya disusun secara cerdas agar model dapat memberikan jawaban terbaik. Alih-alih sekadar mengajukan pertanyaan dan berharap mendapatkan hasil yang bagus, Anda sebenarnya sedang membangun "lingkungan" informasi yang ideal di sekeliling AI untuk mengarahkannya menuju keberhasilan.
 
-## Prompt engineering
+## lll. Prompt engineering
 
 **Prompt engineering** adalah praktik merancang input yang efektif untuk **Large Language Model** (Model Bahasa Besar) guna menghasilkan output yang diinginkan. Peta jalan ini mencakup konsep dasar, teknik utama, parameter model, dan metode tingkat lanjut. Ini merupakan keterampilan universal yang dapat dipelajari siapa saja tanpa memerlukan latar belakang pemrograman, namun sangat penting untuk membuka potensi AI di berbagai aplikasi dan bidang.
 
@@ -133,7 +133,7 @@ Caching prompt adalah teknik yang menyimpan hasil dari prompt LLM sebelumnya, se
 - **Respons Streaming**.
 adalah salah satu teknik yang dapat digunakan oleh agen AI untuk mengirimkan jawabannya kepada pengguna. Dengan respons streaming, agen mulai mengirimkan kata-kata segera setelah kata-kata tersebut dihasilkan. Pengguna melihat teks muncul dan bertambah di layar secara real-time. Hal ini memberikan kesan cepat serta memungkinkan pengguna untuk menghentikan atau mengubah permintaan lebih awal. Metode ini berguna untuk jawaban yang panjang dan aplikasi berbasis percakapan (chat). Sebaliknya, respons non-streaming menunggu hingga seluruh jawaban siap, lalu mengirimkannya sekaligus. Hal ini membuat kode di sisi klien lebih sederhana serta lebih mudah untuk di-cache atau dicatat (log), namun pengguna harus menunggu lebih lama, terutama untuk output yang berukuran besar.
 
-## Context Engineering
+## lV. Context Engineering
 
 Rekayasa konteks adalah proses menyusun, memformat, dan menyempurnakan informasi yang diberikan kepada **Large Language Model** (LLM) secara strategis untuk memandu penalaran serta meningkatkan akurasi keluarannya. Proses ini melibatkan berbagai teknik—seperti **retrieval-augmented generation** (RAG), penataan **prompt**, dan pemilihan metadata yang relevan—guna memastikan model memiliki pengetahuan latar belakang yang diperlukan untuk menangani tugas-tugas tertentu secara efektif.
 
@@ -196,7 +196,7 @@ adalah platform tata kelola dan katalog data yang membantu organisasi menemukan,
 - **PostHog**.
 adalah platform analitik produk yang juga menawarkan apa yang disebutnya sebagai **context warehouse**—sebuah penyimpanan terpadu yang mencakup data peristiwa produk, pemutaran ulang sesi (**session replays**), serta konteks bisnis dari berbagai alat seperti Slack dan tiket dukungan. Alih-alih mengharuskan adanya **pipeline** ETL terpisah untuk memindahkan data antar-sistem, PostHog menyajikan data gabungan ini secara langsung kepada agen AI melalui server MCP-nya, sehingga memungkinkan agen tersebut melakukan kueri terhadap perilaku produk dan konteks bisnis menggunakan antarmuka yang sama dengan yang digunakan oleh manusia.
 
-## Types of AI Models
+## V. Types of AI Models (AI Models)
 
 Model AI hadir dalam berbagai bentuk. Model terbuka memberikan akses transparan terhadap arsitektur dan data pelatihannya, sehingga mendorong kolaborasi dan penyesuaian, sedangkan model tertutup menjaga kerahasiaan detail-detail tersebut. Model yang telah dilatih sebelumnya (**pre-trained models**) dilatih menggunakan kumpulan data berskala besar dan dapat disesuaikan lebih lanjut (**fine-tuned**) untuk tugas-tugas spesifik, sehingga menghemat waktu dan sumber daya. Di sisi lain, model yang di-host secara mandiri (**self-hosted models**) menawarkan kendali dan privasi yang lebih besar karena model tersebut diterapkan dan dikelola di infrastruktur Anda sendiri.
 
@@ -212,7 +212,7 @@ Model sumber terbuka tersedia secara bebas untuk kustomisasi dan kolaborasi, seh
 
 Model AI yang dihosting sendiri adalah model pembelajaran mesin (**machine learning**) yang diterapkan dan dijalankan pada infrastruktur Anda sendiri, alih-alih bergantung pada layanan pihak ketiga atau penyedia layanan **cloud**. Hal ini berarti Anda memiliki kendali penuh atas perangkat keras, perangkat lunak, dan data yang digunakan untuk menjalankan model tersebut, sehingga memungkinkan kustomisasi dan keamanan yang lebih baik, serta potensi biaya jangka panjang yang lebih rendah, tergantung pada kebutuhan dan skala spesifik Anda.
 
-## Choosing the Right Model
+## Vl. Choosing the Right Model
 
 Memilih **large language model** (LLM) yang tepat melibatkan pertimbangan berbagai faktor seperti kompleksitas tugas, anggaran, dan kinerja yang diharapkan. Tugas yang lebih sederhana mungkin hanya memerlukan model yang lebih kecil dan efisien, sedangkan masalah yang lebih kompleks akan lebih efektif ditangani oleh model yang lebih besar dengan kapasitas lebih tinggi. Biaya juga merupakan faktor krusial, karena model yang lebih besar umumnya membutuhkan sumber daya komputasi yang lebih besar. Anda juga perlu mengevaluasi akurasi, kecepatan, dan kemampuan model dalam melakukan generalisasi terhadap data baru yang belum pernah ditemui sebelumnya. Pertimbangkan untuk melakukan **fine-tuning** pada model yang sudah ada menggunakan dataset spesifik Anda jika Anda membutuhkan kinerja yang lebih khusus.
 
@@ -246,4 +246,49 @@ adalah serangkaian model bahasa besar (LLM) yang dikembangkan oleh Alibaba Group
 
 - **Gemma**
 adalah keluarga model bahasa besar (**large language models** atau LLM) sumber terbuka yang dikembangkan oleh Google. Model-model ini dirancang agar ringan namun memiliki performa tinggi, sehingga cocok untuk berbagai tugas, termasuk pembuatan teks, penjawaban pertanyaan, dan penyelesaian kode. Model Gemma tersedia dalam berbagai ukuran, yang memungkinkan pengembang untuk memilih model terbaik sesuai dengan batasan sumber daya dan kebutuhan performa mereka.
+
+### Platform & Ecosystem
+
+- **Hugging Face**.
+adalah perusahaan AI dan platform sumber terbuka (open-source) terkemuka yang menyediakan berbagai alat, model, dan pustaka untuk pemrosesan bahasa alami (NLP), visi komputer, dan tugas pembelajaran mesin lainnya. Perusahaan ini paling dikenal berkat pustaka "Transformers"-nya, yang mempermudah penggunaan model pra-latih seperti BERT, GPT, T5, dan CLIP, sehingga model-model tersebut dapat digunakan untuk berbagai tugas seperti klasifikasi teks, penerjemahan, peringkasan, dan pengenalan gambar.
+
+- **Hugging Face Tasks**.
+Hugging Face mendukung klasifikasi teks, pengenalan entitas bernama (**named entity recognition**), penjawaban pertanyaan, peringkasan, dan penerjemahan. Platform ini juga mencakup tugas multimodal yang melibatkan teks dan gambar, seperti penjawaban pertanyaan visual (VQA) dan pencocokan gambar-teks. Setiap tugas dijalankan oleh berbagai model pra-latih yang dapat diakses dan disesuaikan (**fine-tuned**) dengan mudah melalui pustaka Hugging Face.
+
+- **Hugging Face Hub**.
+adalah platform terpusat tempat pengguna dapat menemukan, berbagi, dan berkolaborasi dalam penggunaan model pra-latih, dataset, dan demo untuk pembelajaran mesin (machine learning). Platform ini menampung repositori sumber daya yang sangat luas hasil kontribusi komunitas, sehingga pengguna dapat dengan mudah mengakses dan mengintegrasikan aset-aset tersebut ke dalam proyek AI mereka. Hub ini menyediakan berbagai alat untuk kontrol versi, dokumentasi **model card**, hingga penerapan (**deployment**) berbasis web, yang menyederhanakan proses pemanfaatan model AI yang sudah ada sekaligus memfasilitasi kontribusi kembali kepada komunitas sumber terbuka (**open-source**).
+
+- **Transformers.js**.
+adalah pustaka JavaScript yang memungkinkan model transformer—seperti yang berasal dari Hugging Face—untuk dijalankan secara langsung di peramban (browser) atau Node.js tanpa memerlukan layanan cloud. Pustaka ini mendukung berbagai tugas seperti pembuatan teks, analisis sentimen, dan penerjemahan dalam aplikasi web maupun skrip sisi server. Dengan memanfaatkan WebAssembly (Wasm) dan JavaScript yang efisien, Transformers.js menghadirkan kemampuan NLP yang tangguh dengan latensi rendah, privasi yang lebih baik, serta fungsionalitas offline, menjadikannya pilihan ideal untuk aplikasi interaktif real-time yang mengutamakan pemrosesan lokal demi performa dan keamanan.
+
+- **Ollama**.
+adalah platform yang menyediakan model bahasa besar (LLM) yang dirancang untuk dijalankan secara lokal pada perangkat pribadi, sehingga memungkinkan penggunaan fitur AI tanpa bergantung pada layanan cloud. Platform ini mengutamakan privasi, performa, dan kemudahan penggunaan dengan memungkinkan pengguna menjalankan model secara langsung di laptop, desktop, atau perangkat edge, serta menghadirkan kemampuan AI yang cepat dan dapat beroperasi secara offline. Melalui alat seperti Ollama SDK, pengembang dapat mengintegrasikan model-model ini ke dalam aplikasi mereka untuk berbagai tugas—seperti pembuatan teks, peringkasan, dan lain-lain—sembari menikmati keuntungan berupa latensi yang lebih rendah, kontrol data yang lebih baik, serta pemrosesan lokal yang lancar.
+
+- **LM Studio**.
+adalah aplikasi desktop yang dirancang untuk menemukan, mengunduh, dan menjalankan model bahasa besar (LLM) secara lokal di komputer Anda. Aplikasi ini menyediakan antarmuka yang ramah pengguna untuk bereksperimen dengan berbagai LLM sumber terbuka (open-source) tanpa memerlukan pengetahuan teknis yang mendalam ataupun infrastruktur cloud. Pada dasarnya, aplikasi ini membantu Anda mengelola dan berinteraksi dengan LLM secara langsung di perangkat Anda.
+
+- **OpenRouter**.
+berfungsi sebagai API terpadu yang menyediakan akses ke berbagai model bahasa besar (LLM) dari beragam penyedia—seperti OpenAI, Cohere, dan Anthropic—melalui satu platform. Hal ini memungkinkan pengembang untuk beralih antar-model dengan mudah, membandingkan kinerjanya, serta mengoptimalkan aplikasi mereka tanpa perlu mengelola banyak kunci API atau proses integrasi yang rumit. Pada dasarnya, layanan ini menyederhanakan proses eksperimen dan penerapan berbagai model AI.
+
+### APIs & SDKs
+
+- **OpenAI Response API**.
+memungkinkan pengembang untuk berinteraksi dengan berbagai model AI yang disediakan oleh OpenAI. API ini menyediakan cara terstruktur untuk mengirimkan permintaan ke model-model tersebut serta menerima teks, kode, atau keluaran lain yang dihasilkan. Anda dapat mengatur berbagai aspek—seperti **prompt**, **temperature**, panjang maksimum, dan parameter lainnya—untuk menyesuaikan respons dengan kebutuhan spesifik Anda. API ini ditujukan untuk menggantikan Assistants API dan Chat Completions API pada proyek-proyek baru di masa mendatang.
+
+- **Claude Messages API**.
+menyediakan cara terstruktur untuk berinteraksi dengan model AI Claude. API ini memungkinkan pengembang untuk mengirimkan serangkaian pesan kepada Claude, menyerupai sebuah percakapan. Pesan-pesan tersebut dapat mencakup teks, gambar, dan bahkan data terstruktur, sehingga memungkinkan Anda membangun interaksi yang kompleks serta memperoleh wawasan spesifik dari respons model melalui input dan output yang terstruktur.
+
+- **Google Gemini API**.
+memberikan akses terprogram bagi pengembang ke keluarga model AI multimodal Gemini milik Google. API ini memungkinkan aplikasi untuk memahami dan menghasilkan konten yang mencakup teks, gambar, audio, dan video. Pengembang dapat menggunakan API ini untuk membangun berbagai fitur, seperti antarmuka percakapan, alat pembuatan konten, serta sistem yang mampu menganalisis dan merespons data multisensor yang kompleks.
+
+- **Inference SDK**.
+Hugging Face Inference SDK adalah alat canggih yang memungkinkan pengembang untuk dengan mudah mengintegrasikan dan menjalankan inferensi pada model bahasa besar (**large language models**) yang di-host di Hugging Face Hub. Dengan menggunakan InferenceClient, pengguna dapat melakukan panggilan API ke berbagai model untuk tugas-tugas seperti pembuatan teks, pembuatan gambar, dan banyak lagi. SDK ini mendukung operasi sinkron maupun asinkron, sehingga kompatibel dengan alur kerja yang sudah ada.
+
+- **OpenAI-compatible APIs**.
+API yang kompatibel dengan OpenAI adalah antarmuka yang meniru struktur dan fungsionalitas API OpenAI. API ini memungkinkan pengembang untuk beralih antar-model bahasa atau penyedia layanan yang berbeda dengan perubahan kode yang minimal. Hal ini sangat berguna untuk menguji berbagai model, mengurangi ketergantungan pada satu vendor (**vendor lock-in**), atau membangun mekanisme cadangan (**fallback**) jika terjadi gangguan layanan.
+
+## Embeddings & Vector Database
+
+**Apa itu Embedding?**
+Embedding adalah representasi vektor numerik yang padat dari data—seperti kata, kalimat, gambar, atau audio—yang menangkap makna semantik serta hubungan antar-data tersebut. Dengan mengubah data menjadi vektor berukuran tetap, embedding memungkinkan model pembelajaran mesin (machine learning) untuk memproses dan memahami data secara lebih efektif. Sebagai contoh, embedding kata merepresentasikan kata-kata yang serupa dengan vektor yang juga serupa, sehingga memungkinkan dilakukannya tugas-tugas seperti pencarian semantik, sistem rekomendasi, dan klasterisasi. Embedding mempermudah proses perbandingan, pencarian, dan analisis data kompleks yang tidak terstruktur dengan cara memetakan item-item yang serupa agar berdekatan satu sama lain dalam ruang berdimensi tinggi.
 
